@@ -20,13 +20,13 @@ var youLose = 0;
 function newRound() {
   if (calcNumber == goalNumber){
     youWin++;
-    $("#wins").append(youWin);
-    alert("You Win!");
+    $("#wins").html(youWin);
+    alert("You Win!!");
     resetGame();
   }
   else if (calcNumber > goalNumber){
     youLose++;
-    $("#losses").append(youLose);
+    $("#losses").html(youLose);
     alert("Game Over");
     resetGame();
   }
