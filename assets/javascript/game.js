@@ -23,17 +23,17 @@ function newRound() {
   if (calcNumber == goalNumber){
     youWin++;
     $("#wins").html(youWin);
-    alert("You Win!!");
     var x = document.querySelector("#winAudio");
     x.play();
+    alert("You Win!!");
     $(".button").prop('disabled', true);
   }
   else if (calcNumber > goalNumber){
     youLose++;
     $("#losses").html(youLose);
-    alert("Game Over");
     var y = document.querySelector("#loseAudio");
     y.play();
+    alert("Game Over");
     $(".button").prop('disabled', true); 
   } 
 };
