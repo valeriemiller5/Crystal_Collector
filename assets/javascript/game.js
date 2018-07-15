@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+var audio = new Audio("src='assets/images/victory.mp3'");
+
 var goalNumber = Math.floor(Math.random() * 102 + 19);
 $("#randomNumber").html(goalNumber);
 console.log(goalNumber)
@@ -22,14 +24,18 @@ function newRound() {
     youWin++;
     $("#wins").html(youWin);
     alert("You Win!!");
-    resetGame();
+    var x = document.querySelector("#winAudio");
+    x.play();
+    $(".button").prop('disabled', true);
   }
   else if (calcNumber > goalNumber){
     youLose++;
     $("#losses").html(youLose);
     alert("Game Over");
-    resetGame();
-  }
+    var y = document.querySelector("#loseAudio");
+    y.play();
+    $(".button").prop('disabled', true); 
+  } 
 };
 
 function resetGame() {
@@ -41,6 +47,7 @@ function resetGame() {
   yellowCrystal = Math.floor(Math.random() * 12 + 1);
   calcNumber = 0;
   $("#guessCalc").html(calcNumber);
+  $(".button").prop('disabled', false);
 };
 
 $("#redClick").click(function() { 
@@ -70,10 +77,6 @@ $("#yellowClick").click(function() {
 
 $("#startGame").click(function() {
   resetGame();
-  youWin = 0;
-  $("#wins").html(youWin);
-  youLose = 0;
-  $("#losses").html(youLose);
-})
+});
 
 });

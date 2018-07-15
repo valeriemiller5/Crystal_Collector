@@ -22,7 +22,7 @@
             <li>The numbers will be added together, and any crystal may be selected multiple times</li>
             <li>The goal is to match the Goal Number without going over</li>
             <li>If the player reaches the Goal Number without going over, the player wins</li>
-            <li>To reset all values, click "New Game"</li>
+            <li>To start a new round, click "New Game"</li>
             <li>Going over the Goal Number will result in "Game Over" - Good Luck!</li>
         </ul>
 </div>
@@ -46,25 +46,33 @@
         </div>
             
         <div id="backdrop" class="col-md-4 ml-2 p-4 rounded">
-            <button id="redClick">
+            <button class="button" id="redClick">
                 <img src="assets/images/red_crystal.jpg" width="60" height="60" alt="red-crystal">
             </button>
-            <button id="blueClick">
+            <button class="button" id="blueClick">
                 <img src="assets/images/blue_crystal.jpg" width="60" height="60" alt="blue-crystal">
             </button>
-            <button id="yellowClick">
+            <button class="button" id="yellowClick">
                 <img src="assets/images/yellow_crystal.jpg" width="60" height="60" alt="yellow-crystal">
             </button>     
-            <button id="greenClick">
+            <button class="button" id="greenClick">
                 <img src="assets/images/green_crystal.jpg" width="60" height="60" alt="green-crystal">
-            </button>       
+            </button>     
         </div>
     </div>      
+
+    <br>
+    <div class="mx-auto" style="width: 200px;">
+            <button id="startGame" type="button" class="btn btn-primary">New Game</button>
+    </div>
+
 </div>
-<br>
-<div class="mx-auto" style="width: 200px;">
-        <button id="startGame" type="button" class="btn btn-primary">New Game</button>
-</div>
+<audio id="winAudio">
+        <source src="assets/images/victory.mp3" type="audio/mp3">
+</audio>
+<audio id="loseAudio">
+        <source src="assets/images/game-over.mp3" type="audio/mp3">
+</audio>
 
 <script src="assets/javascript/game.js" type="text/javascript"></script>    
 </body>
