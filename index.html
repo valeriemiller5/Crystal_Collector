@@ -17,9 +17,10 @@
             <ul>
                 <li>Click on any one of the four crystals to generate a number</li>
                 <li>The numbers will be added together, and any crystal may be selected multiple times</li>
-                <li>The goal is to match the Goal Number without going over.</li>
-                <li>If the player reaches the Goal Number without going over, the player wins.</li>
-                <li>Going over the Goal Number will result in "Game Over".  Good Luck!</li>
+                <li>The goal is to match the Goal Number without going over</li>
+                <li>If the player reaches the Goal Number without going over, the player wins</li>
+                <li>To reset all values, click "New Game"</li>
+                <li>Going over the Goal Number will result in "Game Over" - Good Luck!</li>
             </ul>
     </div>
 </div>
@@ -33,9 +34,15 @@
             <br>
             <h3>Current Number: <span id="guessCalc"></span></h3>
         </div>
-        <div class="col-md-1"></div>
+        <div class="jumbotron col-md-3 mx-auto">
+            <h3>Wins: <span id="wins"></span></h3>
+            <br>
+            <hr>
+            <br>
+            <h3>Losses: <span id="losses"></span></h3>
+        </div>
         <div class="jumbotron col-md-5 mx-auto">
-            <div>
+            <div id="button">
                 <button id="redClick">
                     <img src="assets/images/red_crystal.jpg" width="50" height="50" alt="red-crystal">
                 </button>
@@ -54,7 +61,7 @@
 </div>
     
 <div class="mx-auto" style="width: 200px;">
-        <button type="button" class="btn btn-primary">Start Game</button>
+        <button id="startGame" type="button" class="btn btn-primary">New Game</button>
 </div>
 
 
