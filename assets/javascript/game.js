@@ -25,7 +25,16 @@ function newRound() {
     $("#wins").html(youWin);
     var x = document.querySelector("#winAudio");
     x.play();
-    alert("You Win!!");
+    Swal.fire({
+      position: 'top-center',
+      title: 'You Win!',
+      imageUrl: 'https://cdn3.iconfinder.com/data/icons/emoticons-50/24/smile_emoticon_emoticons_emoji_emote_2-512.png',
+      imageWidth: 200,
+      imageHeight: 200,
+      showConfirmButton: false,
+      timer: 2500
+    });
+    // alert("You Win!!");
     $(".button").prop('disabled', true);
   }
   else if (calcNumber > goalNumber){
@@ -33,7 +42,16 @@ function newRound() {
     $("#losses").html(youLose);
     var y = document.querySelector("#loseAudio");
     y.play();
-    alert("Game Over");
+    Swal.fire({
+      position: 'top-center',
+      title: 'Game Over',
+      imageUrl: 'https://images-na.ssl-images-amazon.com/images/I/51dAzlTL-aL._SL1384_.jpg',
+      imageWidth: 200,
+      imageHeight: 200,
+      showConfirmButton: false,
+      timer: 2500
+    })
+    // alert("Game Over");
     $(".button").prop('disabled', true); 
   } 
 };
