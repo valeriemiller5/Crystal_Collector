@@ -1,9 +1,10 @@
 # Crystal Collector
-<p align="center">
+<!-- This will add "shields" to the README file -->
+<!-- <p align="center">
     <a href="">
         <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="React Native is released under the MIT license." />
     </a>
-</p>
+</p> -->
 
 > This is a simple button-click game for using jQuery.  The goal is to click on the four crystals to match the Goal Number that randomly generates at the beginning of the game.  Matching the number wins the game; exceeding it loses the game.
 
