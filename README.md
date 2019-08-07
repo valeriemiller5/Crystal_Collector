@@ -9,8 +9,8 @@ To start the game, open the link https://valeriemiller5.github.io/Unit-4-Game/. 
 Google Chrome is recommended for running this program.
 
 # Built With
-+jQuery - to create the actions of the game
-+CSS/Bootstrap - visuals for the webpage
++ jQuery - to create the actions of the game
++ CSS/Bootstrap - visuals for the webpage
 
 # Authors
 Valerie Flores - Initial work
